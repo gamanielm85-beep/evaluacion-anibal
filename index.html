@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Nombres Felinos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scene">
+    <div class="paw-trail" id="pawTrail"></div>
+
+    <header class="header">
+      <span class="eyebrow">laboratorio de bautizos · edición gatuna</span>
+      <h1 class="title">Generador de<br>Nombres Felinos</h1>
+      <p class="subtitle">Presiona el botón, revela un nombre digno de un gato con actitud.</p>
+    </header>
+
+    <main class="card">
+      <div class="name-display" id="nameDisplay">
+        <span class="name-placeholder" id="nameText">¿Cómo se llamará?</span>
+      </div>
+
+      <div class="portrait" id="portrait">
+        <div class="portrait-placeholder" id="portraitPlaceholder">
+          <span>🐱</span>
+          <p>El retrato aparecerá aquí</p>
+        </div>
+        <img class="portrait-img" id="portraitImg" alt="Retrato del gato generado" hidden>
+      </div>
+
+      <div class="controls">
+        <button class="btn-generate" id="generateBtn">
+          <span class="btn-icon">🐾</span>
+          <span>Generar nombre</span>
+        </button>
+
+        <div class="mood-picker">
+          <span class="mood-label">Personalidad</span>
+          <div class="mood-options" id="moodOptions">
+            <button class="mood-btn active" data-mood="elegante">Elegante</button>
+            <button class="mood-btn" data-mood="traviesa">Traviesa</button>
+            <button class="mood-btn" data-mood="dormilona">Dormilona</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="history">
+        <div class="history-header">
+          <span>Últimos descubrimientos</span>
+          <button class="clear-btn" id="clearBtn">limpiar</button>
+        </div>
+        <ul class="history-list" id="historyList">
+          <li class="history-empty">Aún no has generado ningún nombre.</li>
+        </ul>
+      </div>
+
+      <div class="counter">
+        Nombres generados: <strong id="counterValue">0</strong>
+      </div>
+    </main>
+
+    <footer class="footer">
+      Página de prueba — HTML + CSS + JS, sin dependencias externas.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
